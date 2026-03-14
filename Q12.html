@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Table</title>
+</head>
+<body>
+
+<?php
+$fruits = array(
+    "Apple" => 120,
+    "Banana" => 60,
+    "Mango" => 150,
+    "Orange" => 80,
+    "Grapes" => 100
+);
+
+echo "<table border='1'>";
+echo "<tr><th>Fruit Name</th><th>Value</th></tr>";
+
+foreach($fruits as $name => $value)
+{
+    echo "<tr>";
+    echo "<td>$name</td>";
+    echo "<td>$value</td>";
+    echo "</tr>";
+}
+
+echo "</table>";
+?>
+
+</body>
+</html>
